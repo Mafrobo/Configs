@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# xrdb-Werte auslesen
+FG=$(xrdb -query | grep "*.foreground" | awk '{print $2}')
+
+# Werte als Umgebungsvariablen exportieren
+export FG=$FG
+
+# Polybar starten
+polybar mybar
+
+
+# Terminate already running bar instances
+#killall -q polybar
+# If all your bars have ipc enabled, you can also use
+polybar-msg cmd quit
+
+# Launch Polybar, using default config location ~/.config/polybar/config.ini
+polybar bar 1>&2 | tee -a /tmp/polybar.log & disown
+
+#echo "Polybar launched..."

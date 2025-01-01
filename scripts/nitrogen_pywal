@@ -1,0 +1,11 @@
+#!/bin/bash
+wallpaper=$(find $HOME/Pictures/Background -type f | shuf -n 1) 
+
+nitrogen --set-scaled "$wallpaper" &> /dev/null 2>&1
+
+wal -qni "$wallpaper" &&pywalfox update
+
+ln -sf ~/.cache/wal/colors-gtk.css ~/.config/gtk-3.0/gtk.css
+
+killall xsettingsd && xsettingsd &
+
