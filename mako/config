@@ -1,0 +1,17 @@
+include=/home/mafrobo/.cache/wal/colors-mako
+font=Hack Mono 9
+layer=overlay
+anchor=top-right
+width=320
+padding=8
+margin=8
+border-size=2
+default-timeout=5000
+border-radius=2
+
+
+[urgency=high]
+font=Hack Mono 14
+background-color=#8b0000
+default-timeout=0
+ignore-timeout=1
