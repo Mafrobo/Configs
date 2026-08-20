@@ -1,0 +1,8 @@
+require "paq" {
+    "savq/paq-nvim", -- Let Paq manage itself
+   -- "neovim/nvim-lspconfig",
+  --  { "lervag/vimtex", opt = true }, -- Use braces when passing options
+   --  'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
+    "AlphaTechnolog/pywal.nvim"
+}
+require("plugins.pywal")
