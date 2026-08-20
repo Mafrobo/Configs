@@ -3,6 +3,7 @@ require "paq" {
    -- "neovim/nvim-lspconfig",
   --  { "lervag/vimtex", opt = true }, -- Use braces when passing options
    --  'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
-    "AlphaTechnolog/pywal.nvim"
+    "AlphaTechnolog/pywal.nvim",
+    { "ms-jpq/coq_nvim", branch = "coq" }
 }
 require("plugins.pywal")
