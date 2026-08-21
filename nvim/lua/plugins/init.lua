@@ -10,3 +10,4 @@ require "paq" {
 }
 require("plugins.pywal")
 require("plugins.lsp")
+
