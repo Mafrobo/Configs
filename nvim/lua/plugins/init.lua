@@ -1,12 +1,20 @@
 require "paq" {
     "savq/paq-nvim", -- Let Paq manage itself
-   -- "neovim/nvim-lspconfig",
   --  { "lervag/vimtex", opt = true }, -- Use braces when passing options
-   --  'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
+    { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
     "AlphaTechnolog/pywal.nvim",
     { "ms-jpq/coq_nvim", branch = "coq" },
     { "ms-jpq/coq.artifacts", branch = "artifacts" },
-    "neovim/nvim-lspconfig"
+    "neovim/nvim-lspconfig",
+    "nvim-lualine/lualine.nvim",
+    "MunifTanjim/nui.nvim",
+    "folke/noice.nvim",
+    "rcarriga/nvim-notify",
+    "dstein64/vim-startuptime",
+    "folke/which-key.nvim",
+    "lewis6991/gitsigns.nvim"
 }
 require("plugins.pywal")
 require("plugins.lsp")
+require("plugins.lualine")
+require("plugins.noice")
