@@ -12,9 +12,11 @@ require "paq" {
     "rcarriga/nvim-notify",
     "dstein64/vim-startuptime",
     "folke/which-key.nvim",
-    "lewis6991/gitsigns.nvim"
+    "lewis6991/gitsigns.nvim",
+    "numToStr/Comment.nvim",
+    "windwp/nvim-autopairs"
 }
 require("plugins.pywal")
 require("plugins.lsp")
 require("plugins.lualine")
-require("plugins.noice")
+require("nvim-autopairs").setup()
