@@ -1,6 +1,5 @@
 require "paq" {
     "savq/paq-nvim", -- Let Paq manage itself
-  --  { "lervag/vimtex", opt = true }, -- Use braces when passing options
     { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
     "AlphaTechnolog/pywal.nvim",
     { "ms-jpq/coq_nvim", branch = "coq" },
@@ -19,4 +18,5 @@ require "paq" {
 require("plugins.pywal")
 require("plugins.lsp")
 require("plugins.lualine")
+require("plugins.noice")
 require("nvim-autopairs").setup()
